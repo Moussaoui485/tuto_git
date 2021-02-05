@@ -47,18 +47,15 @@
                                 </li>
                            
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/souscrire">{{ 'Offre chien' }}</a>
+                                    <a class="nav-link" href="/offrechien">{{ 'Offre chien' }}</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/souscrire">{{ 'Offre chat' }}</a>
+                                    <a class="nav-link" href="/offrechat">{{ 'Offre chat' }}</a>
                                 </li>
 
                                 <li>
-                                    <form class="form-inline" action="/souscrire">
-                                        
-                                        <button class="btn btn-sm btn-outline-secondary" type="button">OBTENIR UN DEVIS</button>
-                                    </form>
+                                    <a href="/obtenirdevis" class="btn btn-secondary" role="button">OBTENIR UN DEVIS</a>
 
                                 </li>
 

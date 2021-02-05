@@ -5,23 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Animal extends Model
+class Personne extends Model
 {
     use HasFactory;
-
     /**
      * Indicates if the model should be timestamped.
      *
      * @var bool
      */
     public $timestamps = false;
-
-
-     public function devis()
-     {
-         return $this->hasOne(Devis::class);
-
-     }
-
-
 }

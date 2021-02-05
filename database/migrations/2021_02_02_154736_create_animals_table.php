@@ -14,23 +14,21 @@ class CreateAnimalsTable extends Migration
     public function up()
     {
         Schema::create('animals', function (Blueprint $table) {
+            
             $table->id();
             $table->enum('type',['chat','chien']);
             $table->string('nom');
             $table->enum('sexe',['femelle','male']);
             $table->date('dateNaissance');
             $table->string('race');
-            $table->enum('signeIdentif',['tatouage','puce','aucun']);
+            $table->enum('signeIdentif',['tatouage','puce']);
             $table->string('numeroIdentif');
-            $table->boolean('isAdopted');
-            $table->boolean('isAssured');
-            $table->boolean('resilia24mois');
+            $table->boolean('estAdopte')->nullable();
+            $table->boolean('dejaAssure');
             $table->boolean('activitePro');
-            $table->boolean('activiteChasse');
-            $table->boolean('meute');
-
-
-            $table->timestamps();
+            $table->boolean('activiteChasse')->nullable();
+           
+           
         });
     }
 
